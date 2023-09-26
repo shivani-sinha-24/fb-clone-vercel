@@ -1,0 +1,80 @@
+.chatBox{
+    flex: 5.5;
+    height: 100%;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+}
+.noConversationChat{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(176, 176, 176);
+    font-weight: 500;
+    font-size: xx-large;
+}
+.chatBoxWrapper{
+    height: 70%;
+    padding:5px 10px 10px 10px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.chatBoxMiddle{
+    margin-top:20vh;
+}
+.chatBoxTop{
+    position: sticky;
+    height: 8%;
+    top: 0;
+    background-color: white;
+    z-index: 888;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    /* margin-top: 5px; */
+    /* cursor: pointer; */
+}
+.chatBoxTopLeft{
+    font-weight: 600;
+    font-size: larger;
+}
+.chatBoxTopInboxImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.chatBoxTopInboxName{
+    font-weight: 500;
+}
+.chatBoxBottom{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    z-index: 888;
+    border-top: 1px solid gray;
+    padding:10px 0px 15px 0px;
+    height: 10%;
+    min-height: 70px;
+}
+.chatMessageInputText{
+    width: 90%;
+    padding: 0px 5px;
+    background-color: rgb(245, 241, 241);
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+.chatMessageSubmit{
+    width: 8%;
+    color: white;
+    background-color:  #1877f2;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}

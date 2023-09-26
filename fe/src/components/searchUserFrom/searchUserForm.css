@@ -1,0 +1,6 @@
+.search-form{
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px rgb(172, 168, 168);
+    box-shadow: 0 0 10px rgb(149, 140, 140);
+    border-radius: 8px;
+}

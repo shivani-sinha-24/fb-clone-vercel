@@ -1,0 +1,14 @@
+.chatMenu{
+    flex: 3.5;
+}
+
+.chatMenuWrapper{
+    padding: 10px;
+    height: 100%;
+}
+.chatMenuInput{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    padding: 10px 0px;
+}

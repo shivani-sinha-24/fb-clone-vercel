@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* -ms-overflow-style: none;  enable hiding scrollbar feature */
+
+}
+*::-webkit-scrollbar {
+  display:none;
+}
+a{
+  text-decoration: none;
+}

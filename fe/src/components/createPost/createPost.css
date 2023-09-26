@@ -1,0 +1,36 @@
+.create-post{
+    -webkit-box-shadow: 0 0 10px rgb(172, 168, 168);
+    box-shadow: 0 0 10px rgb(134, 129, 129);
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+/* .form-input{
+    width:100%;
+    display:none;
+    margin-bottom:30px;
+} */
+/* form .post-form-top .post-form-left-img{
+    flex: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.post-form-top{
+    display: flex;
+} */
+
+.create-post .post-form .post-form-top{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.create-post .post-form .post-form-top .post-form-left-img{
+    flex: 1;
+    margin:5px 0;
+}
+.create-post .post-form .post-form-top .post-form-center{
+    flex: 10;
+}
+.create-post .post-form .post-form-top .post-form-left-img{
+    flex: 1;
+}

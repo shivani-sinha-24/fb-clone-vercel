@@ -1,0 +1,60 @@
+.left-bar{
+    flex: 2;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+.left-bar::-webkit-scrollbar {
+    display: none;    
+} 
+.left-bar .container{
+    background-color: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px grey;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.left-bar .container hr{
+    margin: 20px 0px;
+    border: none;
+    height: 0.5px;
+    background-color: lightgray;
+}
+.left-bar .container .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.left-bar .container .menu .span{
+    font-size: 14px;
+}
+.left-bar .container .menu .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.left-bar .container .menu .item .material-symbols-outlined{
+    width: 30px;
+    color: #5271ff;
+    font-weight: bolder;
+}
+.left-bar .container .menu .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* font-weight: 500; */
+}
+.left-bar .container .menu .user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.left-bar .container .menu .user img .span{
+    font-size: 14px;
+}
+

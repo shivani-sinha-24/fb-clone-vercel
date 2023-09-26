@@ -1,0 +1,17 @@
+.newsfeed::-webkit-scrollbar{
+    display: none;
+}
+.newsfeed{
+    height: calc(100vh- 70px);
+    border: none;
+    overflow-y: scroll;
+    padding: 20px 70px;
+}
+.homepage-flex{
+    display: flex;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 50%, rgba(148,187,233,1) 100%);
+}
+.main-content{
+    flex: 6;
+}

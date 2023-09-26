@@ -1,0 +1,41 @@
+.found-user{
+    margin:0 20vw;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.found-user .user-info{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.found-user .user-info img{
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+}
+.found-user .user-info span{
+    font-weight: 500;
+    font-size: larger;
+}
+
+.found-user .buttons{
+    display: flex;
+    gap:10px;
+}
+.found-user .buttons :first-child{
+    background-color: #5271ff;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.found-user .buttons :last-child{
+    /* background-color: #f0544f; */
+    background-color: #5271ff;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}

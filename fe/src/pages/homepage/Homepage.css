@@ -1,0 +1,24 @@
+/* 
+TO DO
+    1.responsive desgin using media query(max-width 420px)
+        1. remove searh input    
+        2. remove left bar
+        3. remove right bar
+        4.  in stories=>
+            make each story circle and 
+            place add story button in the middle of the user story by using css{
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                margin:auto;
+            }
+    2. add feature to add||change profile&&cover photo
+    3.add feature to accept friend request and add the users in friendlist of both accepter and sender of request||delete friend request and remove the user from friend request array of the user
+
+TO COMMIT
+    added css along with bootstrap
+    made dynamic profile page
+    added sending,deleting friend request function and checking whether request has already been sent  or not
+    added dynamic profile picture in website
+*/

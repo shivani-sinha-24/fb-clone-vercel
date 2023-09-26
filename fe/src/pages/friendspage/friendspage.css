@@ -1,0 +1,8 @@
+.friendpage-flex{
+    display: flex;
+    /* gap: 20px; */
+    /* padding: 0; */
+}
+.friendpage-flex .main-content{
+    flex:9;
+}
