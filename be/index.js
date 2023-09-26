@@ -5,37 +5,44 @@ import cors from "cors";
 import mongoose from "mongoose";
 import { createServer } from "http";
 import { Server } from "socket.io";
-
+import * as path from 'path'
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 import userRoutes from './routes/user.js';
 import postRoutes from './routes/post.js';
 import conversationRoutes from './routes/conversation.js';
 import messagesRoutes from './routes/messages.js';
+import fileUpload from 'express-fileupload';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const absolutePath = path.resolve(__dirname, "..", "uploads");
+
+mongoose.set('strictQuery', false);
 const app = express();
+app.use(fileUpload())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 // app.use("/uploads", express.static("./uploads"));  // upload folder should be in is in root directory of backed folder
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // upload folder should be in is in root directory of backed folder
-mongoose.set('strictQuery', false);
 
-
-// main().catch((err) => console.log(err));
-try {
-  await mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  console.log("Connected to MongoDB Atlas");
-} catch (error) {
-  console.error("Error connecting to MongoDB Atlas:", error);
+const conf = () => {
+  //mongoose.connect('mongodb://localhost/admissionjockey');
+  mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK);
+  // mongoose.connect('mongodb://localhost/edudb');
+  const db= mongoose.connection;
+  db.on('error',console.error.bind('Unable to connect to the database'));
+  db.once("open",function calback(){
+      console.log("Connection has been established successfully!!");
+  })
 }
-
+conf()
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://facebook-colne-theta.vercel.app",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST","PUT", "PATCH", "DELETE"],
     preflightContinue:true,
     credentials:true,
