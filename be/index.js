@@ -31,7 +31,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 const conf = () => {
   // mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK);
-  mongoose.connect('mongodb+srv://shivanisinha24dec:dhuXRUNhkFjcUjkd@cluster0.e4bpyej.mongodb.net/?retryWrites=true&w=majority');  // mongoose connection link
+  mongoose.connect('mongodb+srv://shivanisinha24dec:3gh6WUSZhFxfQnFN@cluster0.e4bpyej.mongodb.net/?retryWrites=true&w=majority');  // mongoose connection link
   const db= mongoose.connection;
   db.on('error',console.error.bind('Unable to connect to the database'));
   db.once("open",function calback(){
